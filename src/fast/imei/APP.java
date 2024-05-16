@@ -39,6 +39,7 @@ public class APP extends javax.swing.JFrame implements ActionListener {
     private void initComponents() {
 
         Contenedor = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         Menu = new javax.swing.JMenuBar();
         Inicio = new javax.swing.JMenu();
         Inventario = new javax.swing.JMenu();
@@ -49,15 +50,23 @@ public class APP extends javax.swing.JFrame implements ActionListener {
 
         Contenedor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 255)));
 
+        jLabel1.setText("LOGO");
+
         javax.swing.GroupLayout ContenedorLayout = new javax.swing.GroupLayout(Contenedor);
         Contenedor.setLayout(ContenedorLayout);
         ContenedorLayout.setHorizontalGroup(
             ContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 486, Short.MAX_VALUE)
+            .addGroup(ContenedorLayout.createSequentialGroup()
+                .addGap(86, 86, 86)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(110, Short.MAX_VALUE))
         );
         ContenedorLayout.setVerticalGroup(
             ContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 293, Short.MAX_VALUE)
+            .addGroup(ContenedorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         Inicio.setText("INICIO");
@@ -154,6 +163,7 @@ public class APP extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JMenu Inventario;
     private javax.swing.JMenuBar Menu;
     private javax.swing.JMenu Ventas;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 
     @Override
